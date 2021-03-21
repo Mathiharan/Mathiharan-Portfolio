@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Carousel, CarouselItem } from "react-bootstrap";
+import CarouselCaption from "react-bootstrap/CarouselCaption";
 import {
   Card,
   CardImg,
@@ -7,162 +9,121 @@ import {
   CardTitle,
   CardSubtitle,
 } from "reactstrap";
-import {
-  MDBCarousel,
-  MDBCarouselInner,
-  MDBCarouselItem,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardImage,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBBtn,
-} from "mdbreact";
+import { Loading } from "./LoadingComponent";
+import { baseUrl } from "../shared/baseUrl";
+import { FadeTransform } from "react-animation-components";
 
-const Home = () => {
+function RenderCard({ item, isLoading, errMess }) {
+  if (isLoading) {
+    return <Loading />;
+  } else if (errMess) {
+    return <h4>{errMess}</h4>;
+  } else {
+    return (
+      <FadeTransform
+        in
+        transformProps={{
+          exitTransform: "scale(0.5) translateY(-50%)",
+        }}
+      >
+        <Card>
+          <CardImg src={baseUrl + item.image} alt={item.name} />
+          <CardBody>
+            <CardTitle>{item.name}</CardTitle>
+            {item.designation ? (
+              <CardSubtitle>{item.designation}</CardSubtitle>
+            ) : null}
+            <CardText>{item.description}</CardText>
+          </CardBody>
+        </Card>
+      </FadeTransform>
+    );
+  }
+}
+
+function Home(props) {
   return (
-    <MDBContainer>
-      <MDBCarousel activeItem={1} length={3} slide={true} showControls={true} showIndicators={true} multiItem>
-        <MDBCarouselInner>
-          <MDBRow>
-            <MDBCarouselItem itemId="1">
-              <MDBCol md="4">
-                <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" />
-                  <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-              <MDBCol md="4">
-                <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" />
-                  <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-              <MDBCol md="4">
-                <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" />
-                  <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId="2">
-              <MDBCol md="4">
-                <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(60).jpg" />
-                  <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-              <MDBCol md="4">
-                <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(47).jpg" />
-                  <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-              <MDBCol md="4">
-                <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(48).jpg" />
-                  <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId="3">
-              <MDBCol md="4">
-                <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg" />
-                  <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-              <MDBCol md="4">
-                <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg" />
-                  <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-              <MDBCol md="4">
-                <MDBCard className="mb-2">
-                  <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(41).jpg" />
-                  <MDBCardBody>
-                    <MDBCardTitle>MDBCard title</MDBCardTitle>
-                    <MDBCardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </MDBCardText>
-                    <MDBBtn color="primary">MDBBtn</MDBBtn>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-            </MDBCarouselItem>
-          </MDBRow>
-        </MDBCarouselInner>
-      </MDBCarousel>
-    </MDBContainer>
+    <React.Fragment>
+      <div className="container">
+        <div className="col-12 col-md m-1 pageBody">
+          <h3>Showcased Skills</h3>
+          <hr />
+        </div>
+        <div className="col-12 col-md m-1">
+          <Carousel>
+            <CarouselItem>
+              <img
+                className="d-block w-100"
+                src="../assets/vb.jpeg"
+                alt="image 1"
+              />
+              <CarouselCaption>
+                <h3>Sports</h3>
+                <p>A volleyball player since 2016</p>
+              </CarouselCaption>
+            </CarouselItem>
+            <CarouselItem>
+              <img
+                className="d-block w-100"
+                src="../assets/vb.jpeg"
+                alt="image 1"
+              />
+              <CarouselCaption>
+                <h3>Sports</h3>
+                <p>A volleyball player since 2016</p>
+              </CarouselCaption>
+            </CarouselItem>
+            <CarouselItem>
+              <img
+                className="d-block w-100"
+                src="../assets/vb.jpeg"
+                alt="image 1"
+              />
+              <CarouselCaption>
+                <h3>Sports</h3>
+                <p>A volleyball player since 2016</p>
+              </CarouselCaption>
+            </CarouselItem>
+            <CarouselItem>
+              <img
+                className="d-block w-100"
+                src="../assets/vb.jpeg"
+                alt="image 1"
+              />
+              <CarouselCaption>
+                <h3>Sports</h3>
+                <p>A volleyball player since 2016</p>
+              </CarouselCaption>
+            </CarouselItem>
+            <CarouselItem>
+              <img
+                className="d-block w-100"
+                src="../assets/vb.jpeg"
+                alt="image 1"
+              />
+              <CarouselCaption>
+                <h3>Sports</h3>
+                <p>A volleyball player since 2016</p>
+              </CarouselCaption>
+            </CarouselItem>
+          </Carousel>
+        </div>
+        <div className="row align-items-start">
+          <div className="col-12 col-md-12 m-1 pageBody">
+            <h3>Showcased Skills</h3>
+            <hr />
+          </div>
+          <div className="col-12 col-md m-1">
+            <RenderCard
+              item={props.leader}
+              isLoading={props.leadersLoading}
+              errMess={props.leadersErrMess}
+            />
+          </div>
+        </div>
+      </div>
+    </React.Fragment>
   );
 }
 
 export default Home;
-
-/*
-function Home(props) {
-  return <div className="container"></div>;
-}
-
-*/

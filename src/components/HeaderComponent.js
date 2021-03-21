@@ -17,7 +17,7 @@ import {
   Label,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import Image from "react-bootstrap/Image";
+import { Image } from "react-bootstrap";
 
 class Header extends Component {
   constructor(props) {
@@ -64,7 +64,7 @@ class Header extends Component {
               <h3>Mathi's Blog</h3>
             </NavbarBrand>
             <Collapse isOpen={this.state.isNavOpen} navbar>
-              <Nav Navbar>
+              <Nav Navbar className="ml-auto">
                 <NavItem>
                   <NavLink className="navi nav-link" to="/home">
                     <span className="fa fa-home fa-lg"></span>Home

@@ -24,7 +24,7 @@ function Footer(props) {
             </ul>
           </div>
           <div className="col-7 col-sm-5">
-            <h5>Our Address</h5>
+            <h5>Address</h5>
             <address>
               12/23, Krishnapillai Street,
               <br />
@@ -63,12 +63,6 @@ function Footer(props) {
                 href="http://twitter.com/"
               >
                 <i className="fa fa-twitter"></i>
-              </a>
-              <a
-                className="btn btn-social-icon btn-google"
-                href="http://youtube.com/"
-              >
-                <i className="fa fa-youtube"></i>
               </a>
               <a className="btn btn-social-icon" href="mailto:">
                 <i className="fa fa-envelope-o"></i>
