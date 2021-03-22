@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import Home from "./HomeComponent";
 import Header from "./HeaderComponent";
+import Contact from "./ContactComponent";
 import Footer from "./FooterComponent";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import { fetchLeaders } from "../redux/ActionCreators";
+import { postFeedback, fetchLeaders } from "../redux/ActionCreators";
+import { actions } from "react-redux-form";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 const mapStateToProps = (state) => {
@@ -17,10 +19,32 @@ const mapDispatchToProps = (dispatch) => ({
   fetchLeaders: () => {
     dispatch(fetchLeaders());
   },
+  postFeedback: (
+    firstname,
+    lastname,
+    telnum,
+    email,
+    agree,
+    contactType,
+    message
+  ) =>
+    dispatch(
+      postFeedback(
+        firstname,
+        lastname,
+        telnum,
+        email,
+        agree,
+        contactType,
+        message
+      )
+    ),
+  resetFeedbackForm: () => {
+    dispatch(actions.reset("feedback"));
+  },
 });
 
 class Main extends Component {
-
   componentDidMount() {
     this.props.fetchLeaders();
   }
@@ -29,7 +53,9 @@ class Main extends Component {
     const HomePage = () => {
       return (
         <Home
-          leader={this.props.leaders.leaders.filter((leader) => leader.featured)[0]}
+          leader={
+            this.props.leaders.leaders.filter((leader) => leader.featured)[0]
+          }
           leadersLoading={this.props.leaders.isLoading}
           leadersErrMess={this.props.leaders.errMess}
         />
@@ -47,6 +73,16 @@ class Main extends Component {
           >
             <Switch>
               <Route path="/home" component={HomePage} />
+              <Route
+                exact
+                path="/contactme"
+                component={() => (
+                  <Contact
+                    resetFeedbackForm={this.props.resetFeedbackForm}
+                    postFeedback={this.props.postFeedback}
+                  />
+                )}
+              />
               <Redirect to="/home" />
             </Switch>
           </CSSTransition>

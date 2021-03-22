@@ -91,7 +91,7 @@ class Header extends Component {
                   <Button
                     outline
                     onClick={this.toggleModal}
-                    style={{ color: "whitesmoke"}}
+                    style={{ color: "whitesmoke" }}
                   >
                     <span className="fa fa-sign-in fa-lg"></span>Login
                   </Button>

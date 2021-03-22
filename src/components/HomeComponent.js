@@ -46,6 +46,43 @@ function Home(props) {
     <React.Fragment>
       <div className="container">
         <div className="col-12 col-md m-1 pageBody">
+          <h3>About Me</h3>
+          <hr />
+        </div>
+        <div className="col-12 col-md-12 m-1">
+          <p>I'm well versed in Front end development and have a high interest to pursue a career
+            in Fullstack development. Since I'm a multitalented person having a good record in academics, sports especially volleyball
+            and also much talented graphics designer.
+          </p>
+        </div>
+        <div className="row align-items-start">
+          <div className="col-12 col-md-12 m-1 pageBody">
+            <h3>Services What I offer</h3>
+            <hr />
+          </div>
+          <div className="col-12 col-md-4 ">
+            <RenderCard
+              item={props.leader}
+              isLoading={props.leadersLoading}
+              errMess={props.leadersErrMess}
+            />
+          </div>
+          <div className="col-12 col-md-4 ">
+            <RenderCard
+              item={props.leader}
+              isLoading={props.leadersLoading}
+              errMess={props.leadersErrMess}
+            />
+          </div>
+          <div className="col-12 col-md">
+            <RenderCard
+              item={props.leader}
+              isLoading={props.leadersLoading}
+              errMess={props.leadersErrMess}
+            />
+          </div>
+        </div>
+        <div className="col-12 col-md m-1 pageBody">
           <h3>Showcased Skills</h3>
           <hr />
         </div>
@@ -107,19 +144,6 @@ function Home(props) {
               </CarouselCaption>
             </CarouselItem>
           </Carousel>
-        </div>
-        <div className="row align-items-start">
-          <div className="col-12 col-md-12 m-1 pageBody">
-            <h3>Showcased Skills</h3>
-            <hr />
-          </div>
-          <div className="col-12 col-md m-1">
-            <RenderCard
-              item={props.leader}
-              isLoading={props.leadersLoading}
-              errMess={props.leadersErrMess}
-            />
-          </div>
         </div>
       </div>
     </React.Fragment>
