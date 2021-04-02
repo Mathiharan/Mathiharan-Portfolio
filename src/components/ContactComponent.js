@@ -61,7 +61,7 @@ class Contact extends Component {
           </div>
           <div className="col-12 col-sm-12 offset-sm-1">
             <h5>My Address</h5>
-            <address>
+            <address style={{color: "blue"}}>
               12/23, Krishnapillai Street,
               <br />
               Sainathapuram, Vellore,

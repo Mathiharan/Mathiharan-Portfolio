@@ -65,6 +65,30 @@ address{
 }
 
 .pageBody {
-  padding: 30px 0px 30px 0px;
+  padding: 30px 0px 10px 0px;
 }
 
+#cardTitle {
+  font-size: large;
+}
+
+.cardfont {
+  color: black;
+}
+
+.hr {
+  color: whitesmoke;
+  border-color: whitesmoke;
+  opacity: 30%;
+}
+
+.circleimg{
+  width: 150px;
+  height: 180px;
+  margin: 10;
+  padding: 10px 10px 10px 10px;
+}
+
+.testimonial-author{
+  padding-bottom: 40px;
+}
