@@ -8,6 +8,8 @@ import { connect } from "react-redux";
 import { postFeedback, fetchLeaders } from "../redux/ActionCreators";
 import { actions } from "react-redux-form";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+import Achievements from "./Achievements";
+import Skills from "./Skills";
 
 const mapStateToProps = (state) => {
   return {
@@ -73,6 +75,8 @@ class Main extends Component {
           >
             <Switch>
               <Route path="/home" component={HomePage} />
+              <Route exact path="/skill" component={Skills} />
+              <Route exact path="/achievements" component={Achievements} />
               <Route
                 exact
                 path="/contactme"

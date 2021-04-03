@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Carousel, CarouselItem } from "react-bootstrap";
 import CarouselCaption from "react-bootstrap/CarouselCaption";
 import {
@@ -149,7 +149,7 @@ function Home(props) {
             <CarouselItem>
               <img
                 className="d-block w-100"
-                src="../assets/vb.jpeg"
+                src="../assets/2.jpg"
                 alt="image 1"
               />
               <CarouselCaption>
@@ -160,7 +160,7 @@ function Home(props) {
             <CarouselItem>
               <img
                 className="d-block w-100"
-                src="../assets/vb.jpeg"
+                src="../assets/2.jpg"
                 alt="image 1"
               />
               <CarouselCaption>
@@ -171,7 +171,7 @@ function Home(props) {
             <CarouselItem>
               <img
                 className="d-block w-100"
-                src="../assets/vb.jpeg"
+                src="../assets/2.jpg"
                 alt="image 1"
               />
               <CarouselCaption>
@@ -182,7 +182,7 @@ function Home(props) {
             <CarouselItem>
               <img
                 className="d-block w-100"
-                src="../assets/vb.jpeg"
+                src="../assets/2.jpg"
                 alt="image 1"
               />
               <CarouselCaption>
