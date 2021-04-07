@@ -34,8 +34,13 @@ function Skills(props) {
             <BreadcrumbItem active>Skills and Projects</BreadcrumbItem>
           </Breadcrumb>
           <div className="col-12">
-            <h3>Skills and Projects</h3>
-            <hr />
+            <h3>Skills</h3>
+            <hr className="hr"/>
+          </div>
+          <div className="row row-content">
+            <div className="col-12">
+              
+            </div>
           </div>
         </div>
       </div>
