@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Carousel, CarouselItem } from "react-bootstrap";
 import CarouselCaption from "react-bootstrap/CarouselCaption";
+import ImageShadow from 'react-image-shadow';
+import 'react-image-shadow/assets/index.css';
+
 import {
   Card,
   CardImg,

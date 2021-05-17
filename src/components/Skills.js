@@ -22,6 +22,7 @@ import { Link } from "react-router-dom";
 import { Loading } from "./LoadingComponent";
 import { baseUrl } from "../shared/baseUrl";
 import { FadeTransform } from "react-animation-components";
+import Modal from "./Projects";
 
 let data = [
   {
@@ -138,6 +139,15 @@ function Skills(props) {
               <Badge variant="primary">Primary</Badge>
               <Badge variant="primary">Primary</Badge>
               <Badge variant="primary">Primary</Badge>
+            </div>
+          </div>
+          <div className="col-12">
+            <h3>Project Works</h3>
+            <hr className="hr" />
+          </div>
+          <div className="row row-content">
+            <div className="col-12 col-md-8">
+            <Modal />
             </div>
           </div>
         </div>
