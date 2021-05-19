@@ -103,7 +103,7 @@ class Header extends Component {
         <Jumbotron fluid>
           <div className="container">
             <div className="row row-header">
-              <div className="col-12 col-sm-4 ">
+              <div className="col-12 col-md-4 ">
                 <Image
                   src="../assets/mathi.jpeg"
                   style={{
@@ -115,7 +115,7 @@ class Header extends Component {
                   roundedCircle
                 />
               </div>
-              <div className="col-12 col-sm">
+              <div className="col-12 col-md">
                 <h3>MATHIHARAN T</h3>
                 <hr />
                 <p>

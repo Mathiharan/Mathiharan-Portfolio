@@ -9,7 +9,7 @@ let project = [
     description:
       "This is my first project in the college days while learning html, css and javascript.",
     github: "",
-    position: "",
+    position: false,
   },
   {
     id: "2",
@@ -18,7 +18,7 @@ let project = [
     description:
       "A official website build for a Restaurant to display their cusines and about the administration. Also shows rating for each food items along with customer reviews",
     github: "",
-    position: "",
+    position: true,
   },
   {
     id: "3",
@@ -27,9 +27,13 @@ let project = [
     description:
       "A Mobile application similar to Swiggy developed using React Js and by retriving data from Yelp API, with the features of location tracking, food searching etc...",
     github: "",
-    position: "",
+    position: false,
   },
 ];
+
+const SetPadding = styled.div`
+  padding: 0 0 50px 0;
+`;
 
 const ModalWrapper = styled.div`
   width: 800px;
@@ -44,10 +48,17 @@ const ModalWrapper = styled.div`
   border-radius: 10px;
 `;
 
-const ModalImg = styled.img`
+const ModalLImg = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 10px 0 0 10px;
+  background: #000;
+`;
+
+const ModalRImg = styled.img`
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
   background: #000;
 `;
 
@@ -69,6 +80,12 @@ const ModalContent = styled.div`
     color: #fff;
     border: none;
   }
+
+  button: hover{
+    background: #8cff40;
+    color: #000000;
+    transition: 0.5s;
+  }
 `;
 
 function Modal() {
@@ -76,14 +93,17 @@ function Modal() {
     <>
       {project.map((item, index) => {
         return (
-          <ModalWrapper key={index}>
-            <ModalImg src={item.pic} />
-            <ModalContent>
-              <h1>{item.title}</h1>
-              <p>{item.description}</p>
-              <button onClick={item.github}>Check in Github</button>
-            </ModalContent>
-          </ModalWrapper>
+          <SetPadding>
+            <ModalWrapper key={index}>
+              { !item.position && <ModalLImg src={item.pic} />}
+              <ModalContent>
+                <h1>{item.title}</h1>
+                <p>{item.description}</p>
+                <button onClick={item.github}>Check in Github</button>
+              </ModalContent>
+              { item.position && <ModalRImg src={item.pic} />}
+            </ModalWrapper>
+          </SetPadding>
         );
       })}
     </>

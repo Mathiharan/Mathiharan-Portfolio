@@ -15,6 +15,54 @@ import { Loading } from "./LoadingComponent";
 import { baseUrl } from "../shared/baseUrl";
 import { FadeTransform } from "react-animation-components";
 
+let Review = [
+  {
+    id: "1",
+    dp: "../assets/mathi.jpeg",
+    review: "He is such an amazing student with multi talented skills",
+    name: "~Mathiharan T",
+  },
+  {
+    id: "2",
+    dp: "../assets/4.jpg",
+    review: "He is such an amazing student with multi talented skills",
+    name: "~Sarvagha K",
+  },
+  {
+    id: "3",
+    dp: "../assets/4.jpg",
+    review: "He is such an amazing student with multi talented skills",
+    name: "~Sarvagha K",
+  },
+];
+
+let Skills = [
+  {
+    id: "1",
+    image: "../assets/2.jpg",
+    title: "Sports",
+    description: "A volleyball player since 2016",
+  },
+  {
+    id: "2",
+    image: "../assets/2.jpg",
+    title: "Sports",
+    description: "A volleyball player since 2016",
+  },
+  {
+    id: "3",
+    image: "../assets/2.jpg",
+    title: "Sports",
+    description: "A volleyball player since 2016",
+  },
+  {
+    id: "4",
+    image: "../assets/vb.jpeg",
+    title: "Sports",
+    description: "A volleyball player since 2016",
+  },
+];
+
 function RenderCard({ item, isLoading, errMess }) {
   if (isLoading) {
     return <Loading />;
@@ -146,61 +194,21 @@ function Home(props) {
         </div>
         <div className="col-12 col-md m-1">
           <Carousel>
-            <CarouselItem>
-              <img
-                className="d-block w-100"
-                src="../assets/2.jpg"
-                alt="image 1"
-              />
-              <CarouselCaption>
-                <h3>Sports</h3>
-                <p>A volleyball player since 2016</p>
-              </CarouselCaption>
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                className="d-block w-100"
-                src="../assets/2.jpg"
-                alt="image 1"
-              />
-              <CarouselCaption>
-                <h3>Sports</h3>
-                <p>A volleyball player since 2016</p>
-              </CarouselCaption>
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                className="d-block w-100"
-                src="../assets/2.jpg"
-                alt="image 1"
-              />
-              <CarouselCaption>
-                <h3>Sports</h3>
-                <p>A volleyball player since 2016</p>
-              </CarouselCaption>
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                className="d-block w-100"
-                src="../assets/2.jpg"
-                alt="image 1"
-              />
-              <CarouselCaption>
-                <h3>Sports</h3>
-                <p>A volleyball player since 2016</p>
-              </CarouselCaption>
-            </CarouselItem>
-            <CarouselItem>
-              <img
-                className="d-block w-100"
-                src="../assets/vb.jpeg"
-                alt="image 1"
-              />
-              <CarouselCaption>
-                <h3>Sports</h3>
-                <p>A volleyball player since 2016</p>
-              </CarouselCaption>
-            </CarouselItem>
+            {Skills.map((item, index) => {
+              return (
+                <CarouselItem key={index}>
+                  <img
+                    className="d-block w-100"
+                    src={item.image}
+                    alt="Skills"
+                  />
+                  <CarouselCaption>
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                  </CarouselCaption>
+                </CarouselItem>
+              );
+            })}
           </Carousel>
         </div>
         <div className="col-12 col-md m-1 pageBody">
@@ -208,67 +216,29 @@ function Home(props) {
           <hr className="hr" />
         </div>
         <div className="col-12 col-md-12">
-          <Carousel >
-            <CarouselItem>
-              <div className="d-flex justify-content-center">
-                <Image
-                  src="../assets/mathi.jpeg"
-                  className="circleimg"
-                  alt="#"
-                  roundedCircle
-                />
-              </div>
-              <blockquote className="d-flex justify-content-center">
-                <p>
-                  "He is such an amazing student with multi talented skills"
-                </p>
-              </blockquote>
-              <div className="testimonial-author d-flex justify-content-center">
-                <p>
-                  <strong>~Mathiharan T</strong>
-                </p>
-              </div>
-            </CarouselItem>
-            <CarouselItem>
-              <div className="d-flex justify-content-center">
-                <Image
-                  src="../assets/4.jpg"
-                  className="circleimg d-flex justify-content-center"
-                  alt="#"
-                  roundedCircle
-                />
-              </div>
-              <blockquote className="d-flex justify-content-center">
-                <p>
-                  "He is such an amazing student with multi talented skills"
-                </p>
-              </blockquote>
-              <div className="testimonial-author d-flex justify-content-center">
-                <p>
-                  <strong>~Sarvagha K</strong>
-                </p>
-              </div>
-            </CarouselItem>
-            <CarouselItem>
-              <div className="d-flex justify-content-center">
-                <Image
-                  src="../assets/4.jpg"
-                  className="circleimg"
-                  alt="#"
-                  roundedCircle
-                />
-              </div>
-              <blockquote className="d-flex justify-content-center">
-                <p>
-                  "He is such an amazing student with multi talented skills"
-                </p>
-              </blockquote>
-              <div className="testimonial-author d-flex justify-content-center">
-                <p>
-                  <strong>~Sarvagha K</strong>
-                </p>
-              </div>
-            </CarouselItem>
+          <Carousel>
+            {Review.map((item, index) => {
+              return (
+                <CarouselItem key={index}>
+                  <div className="d-flex justify-content-center">
+                    <Image
+                      src={item.dp}
+                      className="circleimg"
+                      alt="#"
+                      roundedCircle
+                    />
+                  </div>
+                  <blockquote className="d-flex justify-content-center">
+                    <q>{item.review}</q>
+                  </blockquote>
+                  <div className="testimonial-author d-flex justify-content-center">
+                    <p>
+                      <strong>{item.name}</strong>
+                    </p>
+                  </div>
+                </CarouselItem>
+              );
+            })}
           </Carousel>
         </div>
       </div>

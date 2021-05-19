@@ -6,7 +6,7 @@ function Footer(props) {
     <div className="footer">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-4 offset-1 col-sm-2">
+          <div className="col-4 offset-1 col-md-2">
             <h5>Links</h5>
             <ul className="list-unstyled">
               <li>
@@ -23,7 +23,7 @@ function Footer(props) {
               </li>
             </ul>
           </div>
-          <div className="col-7 col-sm-5">
+          <div className="col-7 col-md-5">
             <h5>Address</h5>
             <address>
               12/23, Krishnapillai Street,
@@ -38,7 +38,7 @@ function Footer(props) {
               <a href="mailto:mathiharan.t2018@gmail.com">mathiharan.t2018@gmail.com</a>
             </address>
           </div>
-          <div className="col-12 col-sm-4 align-self-center">
+          <div className="col-12 col-md-4 align-self-center">
             <div className="text-center">
               <a
                 className="btn btn-social-icon btn-google"
