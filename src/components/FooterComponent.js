@@ -13,7 +13,7 @@ function Footer(props) {
                 <Link to="/home">Home</Link>
               </li>
               <li>
-                <Link to="/skills">Skills</Link>
+                <Link to="/skill">Skills</Link>
               </li>
               <li>
                 <Link to="/achievements">Achievements</Link>
@@ -65,7 +65,7 @@ function Footer(props) {
                 <i className="fa fa-twitter"></i>
               </a>
               <a className="btn btn-social-icon" href="mailto:">
-                <i className="fa fa-envelope-o"></i>
+                <i style={{color: "white"} } className="fa fa-envelope-o"></i>
               </a>
             </div>
           </div>

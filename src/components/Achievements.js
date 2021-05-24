@@ -1,30 +1,18 @@
-import React, { Component } from "react";
-import { Carousel, CarouselItem } from "react-bootstrap";
-import CarouselCaption from "react-bootstrap/CarouselCaption";
-import ImageShadow from "react-image-shadow";
+import React from "react";
+// { Carousel, CarouselItem } from "react-bootstrap";
+//import CarouselCaption from "react-bootstrap/CarouselCaption";
+//import ImageShadow from "react-image-shadow";
 import "react-image-shadow/assets/index.css";
 import styled from "styled-components";
 
 import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  CardHeader,
   Breadcrumb,
   BreadcrumbItem,
-  Button,
-  Row,
-  Label,
-  Col,
 } from "reactstrap";
-import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { Loading } from "./LoadingComponent";
-import { baseUrl } from "../shared/baseUrl";
-import { FadeTransform } from "react-animation-components";
+//import { Loading } from "./LoadingComponent";
+//import { baseUrl } from "../shared/baseUrl";
+//import { FadeTransform } from "react-animation-components";
 
 const ImageWrapper = styled.div`
   justify-content: center;
@@ -203,8 +191,6 @@ class Tile extends React.Component {
     // Modify styles based on state values
     let tileStyle = {};
     let textStyle = {};
-    let headerStyle = {};
-    let zoom = {};
     // When tile clicked
     if (this.state.open) {
       tileStyle = {

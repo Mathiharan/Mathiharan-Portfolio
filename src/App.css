@@ -82,6 +82,10 @@ address {
   opacity: 30%;
 }
 
+a {
+  color: greenyellow;
+}
+
 .circleimg {
   width: 150px;
   height: 180px;

@@ -1,27 +1,10 @@
-import React, { Component } from "react";
-import { Carousel, CarouselItem } from "react-bootstrap";
-import CarouselCaption from "react-bootstrap/CarouselCaption";
+import React from "react";
 import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  CardHeader,
   Breadcrumb,
   BreadcrumbItem,
-  Badge,
-  Button,
-  Row,
-  Label,
-  Col,
+  Badge
 } from "reactstrap";
-import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { Loading } from "./LoadingComponent";
-import { baseUrl } from "../shared/baseUrl";
-import { FadeTransform } from "react-animation-components";
 import Modal from "./Projects";
 
 let data = [

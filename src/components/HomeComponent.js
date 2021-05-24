@@ -121,14 +121,14 @@ function Home(props) {
           </div>
           <div className="col-12 col-md-4 ">
             <RenderCard
-              item={props.leader}
+              item={props.leader1}
               isLoading={props.leadersLoading}
               errMess={props.leadersErrMess}
             />
           </div>
           <div className="col-12 col-md">
             <RenderCard
-              item={props.leader}
+              item={props.leader2}
               isLoading={props.leadersLoading}
               errMess={props.leadersErrMess}
             />
