@@ -18,19 +18,31 @@ import { FadeTransform } from "react-animation-components";
 let Review = [
   {
     id: "1",
-    dp: "../assets/mathi.jpeg",
+    dp: "../assets/sriram.png",
     review: "He is such an amazing student with multi talented skills",
-    name: "~Mathiharan T",
+    name: "~Sriram G",
   },
   {
     id: "2",
-    dp: "../assets/4.jpg",
+    dp: "../assets/vishal.png",
     review: "He is such an amazing student with multi talented skills",
-    name: "~Sarvagha K",
+    name: "~Vishal P M B",
   },
   {
     id: "3",
-    dp: "../assets/4.jpg",
+    dp: "../assets/arun.png",
+    review: "He is such an amazing student with multi talented skills",
+    name: "~Arunvikas T",
+  },
+  {
+    id: "4",
+    dp: "../assets/ranky.png",
+    review: "He is such an amazing student with multi talented skills",
+    name: "~Ranjith K",
+  },
+  {
+    id: "5",
+    dp: "../assets/sarva.png",
     review: "He is such an amazing student with multi talented skills",
     name: "~Sarvagha K",
   },
@@ -39,25 +51,61 @@ let Review = [
 let Skills = [
   {
     id: "1",
-    image: "../assets/2.jpg",
+    image: "../assets/speak.jpg",
     title: "Sports",
     description: "A volleyball player since 2016",
   },
   {
     id: "2",
-    image: "../assets/2.jpg",
+    image: "../assets/vb1.jpg",
     title: "Sports",
     description: "A volleyball player since 2016",
   },
   {
     id: "3",
-    image: "../assets/2.jpg",
+    image: "../assets/artist.jpg",
     title: "Sports",
     description: "A volleyball player since 2016",
   },
   {
     id: "4",
-    image: "../assets/vb.jpeg",
+    image: "../assets/poster.jpg",
+    title: "Sports",
+    description: "A volleyball player since 2016",
+  },
+  {
+    id: "5",
+    image: "../assets/vb2.jpg",
+    title: "Sports",
+    description: "A volleyball player since 2016",
+  },
+  {
+    id: "6",
+    image: "../assets/dhead.jpg",
+    title: "Sports",
+    description: "A volleyball player since 2016",
+  },
+  {
+    id: "7",
+    image: "../assets/iquest1.jpg",
+    title: "Sports",
+    description: "A volleyball player since 2016",
+  },
+  {
+    id: "8",
+    image: "../assets/iquest.jpg",
+    title: "Sports",
+    description: "A volleyball player since 2016",
+  },
+  {
+    id: "9",
+    image: "../assets/pc.jpg",
+    title: "Sports",
+    description: "A volleyball player since 2016",
+  },
+  {
+    id: "10",
+    image: "../assets/vb.jpg",
     title: "Sports",
     description: "A volleyball player since 2016",
   },
@@ -189,7 +237,7 @@ function Home(props) {
           </Card>
         </div>
         <div className="col-12 col-md m-1 pageBody">
-          <h3>Showcased Skills</h3>
+          <h3>Showcased Other Skills</h3>
           <hr className="hr" />
         </div>
         <div className="col-12 col-md m-1">

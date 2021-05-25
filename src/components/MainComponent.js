@@ -18,8 +18,6 @@ const mapStateToProps = (state) => {
   };
 };
 
-
-
 const mapDispatchToProps = (dispatch) => ({
   fetchLeaders: () => {
     dispatch(fetchLeaders());

@@ -8,13 +8,6 @@ import {
   NavItem,
   Jumbotron,
   Button,
-  Modal,
-  ModalHeader,
-  ModalBody,
-  Form,
-  FormGroup,
-  Input,
-  Label,
 } from "reactstrap";
 import axios from "axios";
 import fileDownload from "js-file-download";
@@ -61,22 +54,22 @@ class Header extends Component {
               <Nav Navbar className="ml-auto">
                 <NavItem>
                   <NavLink className="navi nav-link" to="/home">
-                    <span className="fa fa-home fa-lg"></span>Home
+                    <span className="fa fa-home fa-lg"></span> Home
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink className="navi nav-link" to="/skill">
-                    <span className="fa fa-info fa-lg"></span>Skills
+                    <span className="fa fa-info fa-lg"></span> Skills and Projects
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink className="navi nav-link" to="/achievements">
-                    <span className="fa fa-list fa-lg"></span>Achievements
+                    <span className="fa fa-list fa-lg"></span> Achievements
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink className="navi nav-link" to="/contactme">
-                    <span className="fa fa-address-card fa-lg"></span>Contact me
+                    <span className="fa fa-address-card fa-lg"></span> Contact me
                   </NavLink>
                 </NavItem>
               </Nav>
@@ -88,10 +81,10 @@ class Header extends Component {
             <div className="row row-header">
               <div className="col-12 col-md-4 ">
                 <Image
-                  src="../assets/mathi.jpeg"
+                  src="../assets/mat1.png"
                   style={{
-                    width: 200,
-                    height: 220,
+                    width: 250,
+                    height: 250,
                     margin: 0,
                   }}
                   alt="User Image"
