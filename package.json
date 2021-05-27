@@ -2,6 +2,7 @@
   "name": "studprof",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mathiharan.github.io/Mathiharan-Portfolio/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
@@ -14,6 +15,7 @@
     "bootstrap-social": "5.1.1",
     "cross-fetch": "2.1.0",
     "font-awesome": "4.7.0",
+    "gh-pages": "^3.2.0",
     "js-file-download": "^0.4.12",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
@@ -40,6 +42,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
