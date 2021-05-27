@@ -81,7 +81,7 @@ class Header extends Component {
             <div className="row row-header">
               <div className="col-12 col-md-4 ">
                 <Image
-                  src="../assets/mat1.png"
+                  src="../assets/mat.png"
                   style={{
                     width: 250,
                     height: 250,
@@ -95,10 +95,10 @@ class Header extends Component {
                 <h3>MATHIHARAN T</h3>
                 <hr />
                 <p>
-                  Software Engineer | Full stack Developer | Graphics Designer
+                  Student at VIT Vellore | Software Engineer | Full stack Developer | Graphics Designer (UI)
                 </p>
                 <p>
-                  Former Design Head at Innovators' Quest VIT | Volleyball
+                  Former Design Head at Innovators' Quest VIT | Former Core Committe member at Mozilla Firefox Club VIT | Volleyball
                   Player, Team VIT
                 </p>
                 <hr />

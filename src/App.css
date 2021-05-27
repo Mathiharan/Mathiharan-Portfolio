@@ -120,6 +120,10 @@ a {
   transform: scale(1.1);
 }
 
+.bdg {
+  padding: 2px 2px 2px 2px;
+}
+
 .badge {
   padding: 15px;
   border-collapse: separate;
@@ -205,4 +209,15 @@ a {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.styleText {
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+}
+
+.stylePara {
+  color: rgb(0, 0, 0);
+  opacity: 70%;
+  padding: 10px 0 10px 0;
+  background-color: rgb(255, 255, 255);
 }

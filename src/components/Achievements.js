@@ -5,10 +5,7 @@ import React from "react";
 import "react-image-shadow/assets/index.css";
 import styled from "styled-components";
 
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-} from "reactstrap";
+import { Breadcrumb, BreadcrumbItem } from "reactstrap";
 import { Link } from "react-router-dom";
 //import { Loading } from "./LoadingComponent";
 //import { baseUrl } from "../shared/baseUrl";
@@ -18,19 +15,17 @@ const ImageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  zIndex: 0;
+  zindex: 0;
 `;
 
 const TextOn = styled.div`
   position: relative;
   top: -20%;
   color: white;
-  zIndex: 1;
+  zindex: 1;
 `;
 
-/*padding-left: 20px;
-  padding-right: 20px;
-  zindex: 0px;*/
+/**/
 
 function Achievements(props) {
   return (
@@ -61,66 +56,48 @@ const app = document.getElementById("app");
 const data = [
   {
     id: 1,
-    name: "Island",
-    heading: "Volleyball",
-    image:
-      "../assets/iq.jpg",
+    name: "Advisory Board Member",
+    image: "../assets/iq.jpg",
   },
   {
     id: 2,
-    name: "Forest",
-    heading: "Volleyball",
-    image:
-      "../assets/BOG.jpg",
+    name: "Best Out Going Student'2018",
+    image: "../assets/BOG.jpg",
   },
   {
     id: 3,
-    name: "Whale",
-    heading: "Volleyball",
-    image:
-      "../assets/art.jpg",
+    name: "District 1st in Art Contest",
+    image: "../assets/art.jpg",
   },
   {
     id: 4,
-    name: "Mountain",
-    heading: "Volleyball",
-    image:
-      "../assets/head.jpg",
+    name: "Appointed as a Board Member",
+    image: "../assets/head.jpg",
   },
   {
     id: 5,
-    name: "Boat",
-    heading: "Volleyball",
-    image:
-      "../assets/board.jpg",
+    name: "End of Design Chair tenure",
+    image: "../assets/board.jpg",
   },
   {
     id: 6,
-    name: "Flowers",
-    heading: "Volleyball",
-    image:
-      "../assets/merit.jpg",
+    name: "Merit rank & Scholarship'2019",
+    image: "../assets/merit.jpg",
   },
   {
     id: 7,
-    name: "Fire",
-    heading: "Volleyball",
-    image:
-      "../assets/cert.jpg",
+    name: "Top 5th Rank in MIS Dept.",
+    image: "../assets/cert.jpg",
   },
   {
     id: 8,
-    name: "Garden",
-    heading: "Volleyball",
-    image:
-      "../assets/enigma.jpg",
+    name: "Finalist in Enigma plus IIT",
+    image: "../assets/enigma.jpg",
   },
   {
     id: 9,
-    name: "Bridge",
-    heading: "Volleyball",
-    image:
-      "../assets/react.jpg",
+    name: "Certified React Js Developer",
+    image: "../assets/react.jpg",
   },
 ];
 
@@ -206,6 +183,7 @@ class Tile extends React.Component {
         boxShadow: "0 0 40px 5px rgba(0, 0, 0, 0.3)",
         transform: "none",
       };
+      /*
       textStyle = {
         width: "20vw",
         height: "20vw",
@@ -217,8 +195,9 @@ class Tile extends React.Component {
         marginTop: "0vw",
         marginLeft: "0vw",
         transform: "none",
-        fontSize: "50px"
+        fontSize: "50px",
       };
+      */
     } else {
       tileStyle = {
         width: "18vw",
@@ -229,6 +208,8 @@ class Tile extends React.Component {
         position: "relative",
         top: "-20%",
         color: "white",
+        background: "black",
+        opacity: "60%",
         zIndex: "1",
       };
     }
@@ -246,7 +227,9 @@ class Tile extends React.Component {
               style={tileStyle}
             />
           </div>
-          <TextOn style={textStyle}>{this.props.data.name}</TextOn>
+          <TextOn style={textStyle} className="styleText">
+            {this.props.data.name}
+          </TextOn>
         </ImageWrapper>
       </>
     );
