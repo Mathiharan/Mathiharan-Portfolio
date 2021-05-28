@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.52992566.chunk.css",
-    "main.js": "/static/js/main.d30c9a47.chunk.js",
-    "main.js.map": "/static/js/main.d30c9a47.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.dc9ffaee.js",
-    "runtime-main.js.map": "/static/js/runtime-main.dc9ffaee.js.map",
-    "static/css/2.c3a0fe82.chunk.css": "/static/css/2.c3a0fe82.chunk.css",
-    "static/js/2.fb04c9bc.chunk.js": "/static/js/2.fb04c9bc.chunk.js",
-    "static/js/2.fb04c9bc.chunk.js.map": "/static/js/2.fb04c9bc.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.c3a0fe82.chunk.css.map": "/static/css/2.c3a0fe82.chunk.css.map",
-    "static/css/main.52992566.chunk.css.map": "/static/css/main.52992566.chunk.css.map",
-    "static/js/2.fb04c9bc.chunk.js.LICENSE.txt": "/static/js/2.fb04c9bc.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.f691f37e.woff"
+    "main.css": "/Mathiharan-Portfolio/static/css/main.52992566.chunk.css",
+    "main.js": "/Mathiharan-Portfolio/static/js/main.6ffec2ce.chunk.js",
+    "main.js.map": "/Mathiharan-Portfolio/static/js/main.6ffec2ce.chunk.js.map",
+    "runtime-main.js": "/Mathiharan-Portfolio/static/js/runtime-main.66ebf241.js",
+    "runtime-main.js.map": "/Mathiharan-Portfolio/static/js/runtime-main.66ebf241.js.map",
+    "static/css/2.9727c621.chunk.css": "/Mathiharan-Portfolio/static/css/2.9727c621.chunk.css",
+    "static/js/2.daa66534.chunk.js": "/Mathiharan-Portfolio/static/js/2.daa66534.chunk.js",
+    "static/js/2.daa66534.chunk.js.map": "/Mathiharan-Portfolio/static/js/2.daa66534.chunk.js.map",
+    "index.html": "/Mathiharan-Portfolio/index.html",
+    "static/css/2.9727c621.chunk.css.map": "/Mathiharan-Portfolio/static/css/2.9727c621.chunk.css.map",
+    "static/css/main.52992566.chunk.css.map": "/Mathiharan-Portfolio/static/css/main.52992566.chunk.css.map",
+    "static/js/2.daa66534.chunk.js.LICENSE.txt": "/Mathiharan-Portfolio/static/js/2.daa66534.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/Mathiharan-Portfolio/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.dc9ffaee.js",
-    "static/css/2.c3a0fe82.chunk.css",
-    "static/js/2.fb04c9bc.chunk.js",
+    "static/js/runtime-main.66ebf241.js",
+    "static/css/2.9727c621.chunk.css",
+    "static/js/2.daa66534.chunk.js",
     "static/css/main.52992566.chunk.css",
-    "static/js/main.d30c9a47.chunk.js"
+    "static/js/main.6ffec2ce.chunk.js"
   ]
 }
