@@ -58,7 +58,7 @@ let Skills = [
   },
   {
     id: "2",
-    image: "../assets/vb1.jpg",
+    image: "../assets/volley.jpg",
     title: "Sports",
     description: "A volleyball player since 2016. Selected in VIT Volleyball Squad during 2018.",
   },
