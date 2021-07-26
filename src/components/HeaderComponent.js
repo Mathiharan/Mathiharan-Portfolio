@@ -105,7 +105,7 @@ class Header extends Component {
                 <Button
                   onClick={() => {
                     this.handleDownload(
-                      baseUrl+"doc/Profile.pdf",
+                      baseUrl+"assets/Profile.pdf",
                       "Profile.pdf"
                     );
                   }}

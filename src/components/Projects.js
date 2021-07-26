@@ -22,7 +22,7 @@ let project = [
   },
   {
     id: "3",
-    pic: "https://ibb.co/1JMhDnN",
+    pic: "../assets/bus1.jpg",
     title: "Re-designed TNSTC Portal",
     description:
       "This is my first project in the college days while learning html, css and javascript. I have just re-designed the login portal of TNSTC bus reservation system with user friendly UI along with many more extraordinary features. The main goal of this project is to retify the flaws in the main Government built web portal and create an amazing new website.",
