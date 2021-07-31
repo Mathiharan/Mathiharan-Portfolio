@@ -59,7 +59,8 @@ class Header extends Component {
                 </NavItem>
                 <NavItem>
                   <NavLink className="navi nav-link" to="/skill">
-                    <span className="fa fa-info fa-lg"></span> Skills and Projects
+                    <span className="fa fa-info fa-lg"></span> Skills and
+                    Projects
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -69,7 +70,8 @@ class Header extends Component {
                 </NavItem>
                 <NavItem>
                   <NavLink className="navi nav-link" to="/contactme">
-                    <span className="fa fa-address-card fa-lg"></span> Contact me
+                    <span className="fa fa-address-card fa-lg"></span> Contact
+                    me
                   </NavLink>
                 </NavItem>
               </Nav>
@@ -95,23 +97,26 @@ class Header extends Component {
                 <h3>MATHIHARAN T</h3>
                 <hr />
                 <p>
-                  Student at VIT Vellore | Software Engineer | Full stack Developer | Graphics Designer (UI)
+                  Student at VIT Vellore | Software Engineer | Full stack
+                  Developer | Graphics Designer (UI)
                 </p>
                 <p>
-                  Former Design Head at Innovators' Quest VIT | Former Core Committe member at Mozilla Firefox Club VIT | Volleyball
+                  Former Design Head at Innovators' Quest VIT | Former Core
+                  Committe member at Mozilla Firefox Club VIT | Volleyball
                   Player, Team VIT
                 </p>
                 <hr />
-                <Button
+                {/*<Button
                   onClick={() => {
                     this.handleDownload(
                       baseUrl+"assets/Profile.pdf",
                       "Profile.pdf"
                     );
                   }}
-                >
-                  Download Resume
-                </Button>
+                >*/}
+                <a href="https://github.com/Mathiharan" target="_blank">
+                  <Button>Github Acc.</Button>
+                </a>
               </div>
             </div>
           </div>

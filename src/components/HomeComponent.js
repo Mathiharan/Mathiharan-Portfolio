@@ -11,40 +11,72 @@ import {
   CardHeader,
 } from "reactstrap";
 import { Image } from "react-bootstrap";
-import { Loading } from "./LoadingComponent";
+/*import { Loading } from "./LoadingComponent";*/
 import { baseUrl } from "../shared/baseUrl";
 import { FadeTransform } from "react-animation-components";
 import "font-awesome/css/font-awesome.min.css";
+
+let Service = [
+  {
+    id: 0,
+    name: "Budding Software Engineer",
+    image: "../assets/ser4.jpg",
+    designation: "A Rookie!",
+    description:
+      "Software Engineering is my main area of working. From requirements gathering till software deployment and repeatative updation and testing, I'm well knowledged about each of these concepts and flows. As a emerging Software Engineer with much needed varient skillset required recently in industries, I provide the knowledge of Software Requirement Process, Agile Developement, software Configuration Management, Software Project Management, Software Security, Software Architecture and Design and Software Testing. Learning each of these above concepts in a practical cum theory based method makes me superior than other Software Engineering passouts!",
+  },
+  {
+    id: 1,
+    name: "A Full Stack Developer",
+    image: "../assets/ser3.jpg",
+    designation: "An Intermediate Developer!",
+    description:
+      "With my heart goes to Web development and App development, I provide the best effort in doing any work when it comes to Full Stack Development. My journey Started with HTMl, JS and CSS, as time passed now I'm quite familiar with React Js, React Native, Bootstrap, MongoDB, Git, Json Server, npm packages. I had completed react js and react native certification courses in Courser & Udemy respectively with practical knowledge. And also did few projects such as a bus reservation TNSTC remodelled Portal, FOOD PORT App similar to Swiggy and even consider this Mathi's Blog website, which was built in React JS. I'm confident enough about my Front End Dev Skills!",
+  },
+  {
+    id: 2,
+    name: "Creative Graphics Designer",
+    image: "../assets/ser1.jpg",
+    designation: "An Expert in Field!",
+    description:
+      "My thirst to do creative things with the Adobe family never ends ;P !! I'm pretty much a expert in Photoshop with 2yrs experience. I also worked as Design Head in Innovators Quest leading my team from front and shared my knowledge and skills with many juniors in my team. My other expertise tools are Adobe Illustator, After Effects, Filmora. A beginner in Adobe Media Encoder. My line then shifted as a UI by practicing Adobe XD while working on some front end projects. Has 2 months experience as a Design Manager in a Startup Company Acadergy. I'm sure a lot more posters, video editing, motion posters, infographics, digital arts are yet more!",
+  },
+];
 
 let Review = [
   {
     id: "1",
     dp: "../assets/sriram.png",
-    review: "A Gentle soul with amazing skills who teaches people with such a patience and a great planner indeed. Keep Going!",
+    review:
+      "A Gentle soul with amazing skills who teaches people with such a patience and a great planner indeed. Keep Going!",
     name: "~Sriram G",
   },
   {
     id: "2",
     dp: "../assets/vishal.png",
-    review: "Never seen such a down to earth person before. My 'Go to person' tbh. Never hesitated to help and when u go with a problem to him then there's always a solution with him. Stay the same mate!",
+    review:
+      "Never seen such a down to earth person before. My 'Go to person' tbh. Never hesitated to help and when u go with a problem to him then there's always a solution with him. Stay the same mate!",
     name: "~Vishal P M B",
   },
   {
     id: "3",
     dp: "../assets/arun.png",
-    review: "Inspired me with his hard and smart working ability. Always remains cool admist the caotic situations. A Problem Solver!",
+    review:
+      "Inspired me with his hard and smart working ability. Always remains cool admist the caotic situations. A Problem Solver!",
     name: "~Arunvikas T",
   },
   {
     id: "4",
     dp: "../assets/ranky.png",
-    review: "I still wonder how he tops in whatever he does!! A Multitalented person with huge skills. Yet manages to be the best in everything he does. I know him for past 15yrs, when you are around him entertainment is for sure, Trust me!.... A good selfless human.",
+    review:
+      "I still wonder how he tops in whatever he does!! A Multitalented person with huge skills. Yet manages to be the best in everything he does. I know him for past 15yrs, when you are around him entertainment is for sure, Trust me!.... A good selfless human.",
     name: "~Ranjith K",
   },
   {
     id: "5",
     dp: "../assets/sarva.png",
-    review: "I worked with him for an club event. It was quite a big event, but our team never felt any stress. His Leadership was so great. Such an awesome personality to be around and learn from!",
+    review:
+      "I worked with him for an club event. It was quite a big event, but our team never felt any stress. His Leadership was so great. Such an awesome personality to be around and learn from!",
     name: "~Sarvagha K",
   },
 ];
@@ -60,7 +92,8 @@ let Skills = [
     id: "2",
     image: "../assets/volley.jpg",
     title: "Sports",
-    description: "A volleyball player since 2016. Selected in VIT Volleyball Squad during 2018.",
+    description:
+      "A volleyball player since 2016. Selected in VIT Volleyball Squad during 2018.",
   },
   {
     id: "3",
@@ -92,29 +125,34 @@ let Skills = [
     id: "7",
     image: "../assets/iquest1.jpg",
     title: "Iquest Rivera'20 Team",
-    description: "Worked as a Coordinator for the Event conducted by Iquest during Rivera'20 ",
+    description:
+      "Worked as a Coordinator for the Event conducted by Iquest during Rivera'20 ",
   },
   {
     id: "8",
     image: "../assets/iquest.jpg",
     title: "Innovators Quest Family",
-    description: "This Memorable photo is taken on the new Board Announcement day. A Reign Transition day, a day never to forget! 'March 2020'.",
+    description:
+      "This Memorable photo is taken on the new Board Announcement day. A Reign Transition day, a day never to forget! 'March 2020'.",
   },
   {
     id: "9",
     image: "../assets/pc.jpg",
     title: "Lema Labs IOT Woskshop at IIT",
-    description: "Participated in a 2 days workshop during 2019, on IOT and network programming with basic app development to control the IOT Devices.",
+    description:
+      "Participated in a 2 days workshop during 2019, on IOT and network programming with basic app development to control the IOT Devices.",
   },
   {
     id: "10",
     image: "../assets/vb.jpg",
     title: "VIT Freshers Tournament'18",
-    description: "It's the 1st time we played a Volleyball tournament in VIT. Proud that I captained this  beautiful team. A Team with 'DO or Die Spirit!'",
+    description:
+      "It's the 1st time we played a Volleyball tournament in VIT. Proud that I captained this  beautiful team. A Team with 'DO or Die Spirit!'",
   },
 ];
 
-function RenderCard({ item, isLoading, errMess }) {
+{
+  /*function RenderCard({ item, isLoading, errMess }) {
   if (isLoading) {
     return <Loading />;
   } else if (errMess) {
@@ -128,7 +166,7 @@ function RenderCard({ item, isLoading, errMess }) {
         }}
       >
         <Card className="cardfont">
-          <CardImg src={baseUrl + item.image} alt={item.name} />
+          <CardImg src={item.image} alt={item.name} />
           <CardBody>
             <CardTitle>
               <b>{item.name}</b>
@@ -144,6 +182,7 @@ function RenderCard({ item, isLoading, errMess }) {
       </FadeTransform>
     );
   }
+} */
 }
 
 function Home(props) {
@@ -159,11 +198,11 @@ function Home(props) {
             <i>
               Hello! My name is <b>Mathiharan T</b> and I'm currently pursuing
               M.tech Integrated software Engineering at VIT University Vellore.
-              I'm well versed in Front end development and much interest
-              to pursue a career in Fullstack development. Being a Multitalented
-              person having a good record in academics could able to maintain a CGPA of 9.33,
-              also love sports especially volleyball and used to be part VIT
-              volleyball team since 2019.
+              I'm well versed in Front end development and much interest to
+              pursue a career in Fullstack development. Being a Multitalented
+              person having a good record in academics could able to maintain a
+              CGPA of 9.33, also love sports especially volleyball and used to
+              be part VIT volleyball team since 2019.
               <br />
               <br />
               Graphic Designing is my passion after academics, I worked as{" "}
@@ -182,26 +221,59 @@ function Home(props) {
             <h3>Services What I offer</h3>
             <hr className="hr" />
           </div>
-          <div className="col-12 col-md-4 ">
+          <div className="row">
+            {Service.map((item, index) => {
+              return (
+                <div key={index} className="col-12 col-md-4">
+                  <FadeTransform
+                    in
+                    transformProps={{
+                      exitTransform: "scale(0.5) translateY(-50%)",
+                    }}
+                  >
+                    <Card key={index} className="cardfont">
+                      <CardImg src={baseUrl + item.image} alt={item.name} />
+                      <CardBody>
+                        <CardTitle>
+                          <b>{item.name}</b>
+                        </CardTitle>
+                        {item.designation ? (
+                          <CardSubtitle>
+                            <i>{item.designation}</i>
+                          </CardSubtitle>
+                        ) : null}
+                        <CardText>{item.description}</CardText>
+                      </CardBody>
+                    </Card>
+                  </FadeTransform>
+                </div>
+              );
+            })}
+            {/*
             <RenderCard
               item={props.leader}
               isLoading={props.leadersLoading}
               errMess={props.leadersErrMess}
             />
+            */}
           </div>
           <div className="col-12 col-md-4 ">
+            {/*
             <RenderCard
               item={props.leader1}
               isLoading={props.leadersLoading}
               errMess={props.leadersErrMess}
             />
+            */}
           </div>
           <div className="col-12 col-md">
+            {/*
             <RenderCard
               item={props.leader2}
               isLoading={props.leadersLoading}
               errMess={props.leadersErrMess}
             />
+            */}
           </div>
         </div>
         <div className="col-12 col-md m-1 pageBody">

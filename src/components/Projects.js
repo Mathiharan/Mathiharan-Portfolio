@@ -101,20 +101,26 @@ function Modal() {
     <>
       {project.map((item, index) => {
         return (
-          <SetPadding>
-            <ModalWrapper key={index}>
-              {!item.position && <ModalLImg src={item.pic} />}
-              <ModalContent>
-                <h1 className="">{item.title}</h1>
-                <p>{item.description}</p>
-                <h6 style={{color: "orange"}}>Go have a look at the project!</h6>
-                <a href={item.github} target="_blank">
-                  <button onClick={item.github}><i class="fa fa-github fa-lg"></i> Check in Github</button>
-                </a>
-              </ModalContent>
-              {item.position && <ModalRImg src={item.pic} />}
-            </ModalWrapper>
-          </SetPadding>
+          <div className="col-12 col-md">
+            <SetPadding>
+              <ModalWrapper key={index}>
+                {!item.position && <ModalLImg src={item.pic} />}
+                <ModalContent>
+                  <h1 className="">{item.title}</h1>
+                  <p>{item.description}</p>
+                  <h6 style={{ color: "orange" }}>
+                    Go have a look at the project!
+                  </h6>
+                  <a href={item.github} target="_blank">
+                    <button onClick={item.github}>
+                      <i class="fa fa-github fa-lg"></i> Check in Github
+                    </button>
+                  </a>
+                </ModalContent>
+                {item.position && <ModalRImg src={item.pic} />}
+              </ModalWrapper>
+            </SetPadding>
+          </div>
         );
       })}
     </>
