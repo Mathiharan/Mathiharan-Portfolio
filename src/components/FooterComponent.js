@@ -26,9 +26,9 @@ function Footer(props) {
           <div className="col-7 col-md-5">
             <h5>Address</h5>
             <address>
-              12/23, Krishnapillai Street,
+              171/B, Gandhinagar main Road
               <br />
-              Sainathapuram, Vellore
+              Virupatchipuram, Vellore
               <br />
               Tamilnadu, India
               <br />

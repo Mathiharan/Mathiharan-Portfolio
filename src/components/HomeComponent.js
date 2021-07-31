@@ -31,7 +31,7 @@ let Service = [
     image: "../assets/ser3.jpg",
     designation: "An Intermediate Developer!",
     description:
-      "With my heart goes to Web development and App development, I provide the best effort in doing any work when it comes to Full Stack Development. My journey Started with HTMl, JS and CSS, as time passed now I'm quite familiar with React Js, React Native, Bootstrap, MongoDB, Git, Json Server, npm packages. I had completed react js and react native certification courses in Courser & Udemy respectively with practical knowledge. And also did few projects such as a bus reservation TNSTC remodelled Portal, FOOD PORT App similar to Swiggy and even consider this Mathi's Blog website, which was built in React JS. I'm confident enough about my Front End Dev Skills!",
+      "With my heart goes to Web development and App development, I provide the best effort in doing any work when it comes to Full Stack Development. My journey Started with HTMl, JS and CSS, as time passed now I'm quite familiar with React Js, React Native, Bootstrap, MongoDB, Git, Json Server, npm packages. I had completed react js and react native certification courses in Coursera & Udemy respectively with practical knowledge. And also did few projects such as a bus reservation TNSTC remodelled Portal, FOOD PORT App similar to Swiggy and even consider this Mathi's Blog website, which was built in React JS. I'm confident enough about my Front End Dev Skills!",
   },
   {
     id: 2,
@@ -316,8 +316,6 @@ function Home(props) {
               </CardSubtitle>
               <CardText>
                 Worked as a Design manager for a start up company Initially.
-                <br />
-                Due to personal reasons discontinued later.
               </CardText>
             </CardBody>
 
