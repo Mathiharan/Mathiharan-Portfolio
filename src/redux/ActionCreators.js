@@ -93,6 +93,7 @@ export const addLeaders = (leaders) => ({
   payload: leaders,
 });
 
+/*
 export const fetchDoc = () => (dispatch) => {
   return fetch(baseUrl + "document", {
     method: "GET",
@@ -129,3 +130,4 @@ export const addDocuments = (documents) => ({
   type: ActionTypes.DOCUMENT_ADD,
   payload: documents,
 });
+*/
