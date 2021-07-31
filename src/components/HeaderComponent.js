@@ -9,11 +9,11 @@ import {
   Jumbotron,
   Button,
 } from "reactstrap";
-import axios from "axios";
-import fileDownload from "js-file-download";
+//import axios from "axios";
+//import fileDownload from "js-file-download";
 import { NavLink } from "react-router-dom";
 import { Image } from "react-bootstrap";
-import { baseUrl } from "../shared/baseUrl";
+//import { baseUrl } from "../shared/baseUrl";
 
 class Header extends Component {
   constructor(props) {
@@ -22,10 +22,10 @@ class Header extends Component {
       isNavOpen: false,
     };
     this.toggleNav = this.toggleNav.bind(this);
-    this.handleDownload = this.handleDownload.bind(this);
+//    this.handleDownload = this.handleDownload.bind(this); 
   }
 
-  handleDownload = (url, filename) => {
+/*  handleDownload = (url, filename) => {
     axios
       .get(url, {
         responseType: "blob",
@@ -34,6 +34,7 @@ class Header extends Component {
         fileDownload(res.data, filename);
       });
   };
+*/
 
   toggleNav() {
     this.setState({
