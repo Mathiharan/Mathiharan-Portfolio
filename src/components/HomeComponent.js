@@ -232,7 +232,7 @@ function Home(props) {
                     }}
                   >
                     <Card key={index} className="cardfont">
-                      <CardImg src={baseUrl + item.image} alt={item.name} />
+                      <CardImg src={item.image} alt={item.name} />
                       <CardBody>
                         <CardTitle>
                           <b>{item.name}</b>

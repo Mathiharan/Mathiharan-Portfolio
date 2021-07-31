@@ -5,7 +5,7 @@ import Contact from "./ContactComponent";
 import Footer from "./FooterComponent";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import { postFeedback, fetchLeaders, fetchDoc } from "../redux/ActionCreators";
+import { postFeedback, fetchLeaders, /*fetchDoc*/ } from "../redux/ActionCreators";
 import { actions } from "react-redux-form";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Achievements from "./Achievements";
