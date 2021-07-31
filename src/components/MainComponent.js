@@ -14,7 +14,7 @@ import Skills from "./Skills";
 const mapStateToProps = (state) => {
   return {
     leaders: state.leaders,
-    documents: state.documents,
+    //documents: state.documents,
   };
 };
 
@@ -23,9 +23,9 @@ const mapDispatchToProps = (dispatch) => ({
     dispatch(fetchLeaders());
   },
 
-  fetchDoc: () => {
+  /*fetchDoc: () => {
     dispatch(fetchDoc());
-  },
+  },*/
   
   postFeedback: (
     firstname,
@@ -55,7 +55,7 @@ const mapDispatchToProps = (dispatch) => ({
 class Main extends Component {
   componentDidMount() {
     this.props.fetchLeaders();
-    this.props.fetchDoc();
+    //this.props.fetchDoc();
   }
 
   render() {
@@ -78,7 +78,7 @@ class Main extends Component {
     };
 
     const HeaderPage = () => {
-      return <Header document={this.props.documents.documents.filter((document) => document.featured)[0]} />;
+      return <Header /*document={this.props.documents.documents.filter((document) => document.featured)[0]}*/ />;
     };
 
     console.log(this.props.leaders);
