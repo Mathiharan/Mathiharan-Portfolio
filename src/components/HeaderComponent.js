@@ -84,7 +84,7 @@ class Header extends Component {
             <div className="row row-header">
               <div className="col-12 col-md-4 ">
                 <Image
-                  src="../assets/mat.png"
+                  src="../assets/Portf1.png"
                   style={{
                     width: 250,
                     height: 250,
