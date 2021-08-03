@@ -23,7 +23,7 @@ let Service = [
     image: "../assets/ser4.jpg",
     designation: "A Rookie!",
     description:
-      "Software Engineering is my main area of working. From requirements gathering till software deployment and repeatative updation and testing, I'm well knowledged about each of these concepts and flows. As a emerging Software Engineer with much needed varient skillset required recently in industries, I provide the knowledge of Software Requirement Process, Agile Developement, software Configuration Management, Software Project Management, Software Security, Software Architecture and Design and Software Testing. Learning each of these above concepts in a practical cum theory based method makes me superior than other Software Engineering passouts!",
+      "Software Engineering is my main area of working. From requirements gathering till Software deployment and repetative updation and testing, I'm well knowledged about each of these concepts and flows. As an emerging Software Engineer with much needed variant skillset required recently in industries, I provide the knowledge of Software Requirement Process, Agile Developement, software Configuration Management, Software Project Management, Software Security, Software Architecture and Design and Software Testing. Learning each of these above concepts in a practical cum theory based method gives me an upper hand!",
   },
   {
     id: 1,
@@ -39,7 +39,7 @@ let Service = [
     image: "../assets/ser1.jpg",
     designation: "An Expert in Field!",
     description:
-      "My thirst to do creative things with the Adobe family never ends ;P !! I'm pretty much a expert in Photoshop with 2yrs experience. I also worked as Design Head in Innovators Quest leading my team from front and shared my knowledge and skills with many juniors in my team. My other expertise tools are Adobe Illustator, After Effects, Filmora. A beginner in Adobe Media Encoder. My line then shifted as a UI by practicing Adobe XD while working on some front end projects. Has 2 months experience as a Design Manager in a Startup Company Acadergy. I'm sure a lot more posters, video editing, motion posters, infographics, digital arts are yet more!",
+      "My thirst to do creative things with the Adobe family never ends ;P !! I'm pretty much an expert in Photoshop with 2yrs of experience. I also worked as Design Head in Innovators Quest leading my team from front and shared my knowledge and skills with many juniors in my team. My other expertise tools are Adobe Illustator, After Effects, Filmora. A beginner in Adobe Media Encoder. My line then shifted as a UI by practicing Adobe XD while working on some front end projects. Having 2 months experience as a Design Manager in a Startup Company Acadergy. I'm sure a lot more posters, video editing, motion posters, infographics, digital arts are coming up!",
   },
 ];
 
@@ -138,7 +138,7 @@ let Skills = [
   {
     id: "9",
     image: "../assets/pc.jpg",
-    title: "Lema Labs IOT Woskshop at IIT",
+    title: "Lema Labs IOT Workshop at IIT",
     description:
       "Participated in a 2 days workshop during 2019, on IOT and network programming with basic app development to control the IOT Devices.",
   },

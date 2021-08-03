@@ -103,7 +103,7 @@ class Header extends Component {
                 </p>
                 <p>
                   Former Design Head at Innovators' Quest VIT | Former Core
-                  Committe member at Mozilla Firefox Club VIT | Volleyball
+                  Committee member at Mozilla Firefox Club VIT | Volleyball
                   Player, Team VIT
                 </p>
                 <hr />
