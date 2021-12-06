@@ -29,6 +29,15 @@ let project = [
     github: "https://github.com/Mathiharan/Bus-Reservation-Portal.git",
     position: false,
   },
+  {
+    id: "4",
+    pic: "../assets/census1.jpg",
+    title: "Census Record Management System",
+    description:
+      "A Full stack project developed with React js and implemented using the AWS Cloud resources for hosting backend and front end. I have used the AWS resources such as AWS Amplify, Amazon DynamoDB for storage, Lambda functions, Serverless Express API, Amplify Authentication as the Security as a Service. My first attempt to deploy in AWS as a AWS Certified Cloud Practitioner.",
+    github: "https://github.com/Mathiharan/Census_react_version.git",
+    position: false,
+  },
 ];
 
 const SetPadding = styled.div`

@@ -86,7 +86,7 @@ let Skills = [
     id: "1",
     image: "../assets/speak.jpg",
     title: "Speaking Skills & Stand Up Comedy",
-    description: "That was a occasion of an 'On Spot Standup performance.'",
+    description: "That was an occasion of an 'On Spot Standup performance.'",
   },
   {
     id: "2",
@@ -124,9 +124,9 @@ let Skills = [
   {
     id: "7",
     image: "../assets/iquest1.jpg",
-    title: "Iquest Rivera'20 Team",
+    title: "Iquest Riviera'20 Team",
     description:
-      "Worked as a Coordinator for the Event conducted by Iquest during Rivera'20 ",
+      "Worked as a Coordinator for the Event conducted by Iquest during Riviera'20 ",
   },
   {
     id: "8",
@@ -201,7 +201,7 @@ function Home(props) {
               I'm well versed in Front end development and much interest to
               pursue a career in Fullstack development. Being a Multitalented
               person having a good record in academics could able to maintain a
-              CGPA of 9.33, also love sports especially volleyball and used to
+              CGPA of 9.29, also love sports especially volleyball and used to
               be part VIT volleyball team since 2019.
               <br />
               <br />
@@ -283,12 +283,29 @@ function Home(props) {
         <div className="col-12 col-md m-1 cardfont">
           <Card>
             <CardHeader tag="h5">
+              <i class="fa fa-cubes fa-lg"></i> E-Cell IIT Madras
+            </CardHeader>
+            <CardBody>
+              <CardTitle tag="h6">Campus Ambassador</CardTitle>
+              <CardSubtitle className="mb-2 text-muted">
+                Nov 2021 - Present
+              </CardSubtitle>
+              <CardText>
+                Shortlisted as the "Campus Ambassador" to represent
+                <br />
+                E-Cell IIT Madras at VIT Vellore ("CAP tenure 2021-22).
+                <br />
+                Also as an Intern at E-Cell IIT Madras.
+              </CardText>
+            </CardBody>
+
+            <CardHeader tag="h5">
               <i class="fa fa-book fa-lg"></i> Innovators Quest
             </CardHeader>
             <CardBody>
               <CardTitle tag="h6">Advisory Board Member</CardTitle>
               <CardSubtitle className="mb-2 text-muted">
-                Feb 2021 - Present . 4 mos
+                Feb 2021 - Present
               </CardSubtitle>
               <CardTitle tag="h6">Design Head</CardTitle>
               <CardSubtitle className="mb-2 text-muted">
@@ -325,7 +342,7 @@ function Home(props) {
             <CardBody>
               <CardTitle tag="h6">Volleyball Player</CardTitle>
               <CardSubtitle className="mb-2 text-muted">
-                2019 - Present . 2yrs
+                2019 - Present
               </CardSubtitle>
               <CardText>
                 Captained Volleyball team twice VIT Premier League(2019,2020).

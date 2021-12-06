@@ -6,7 +6,7 @@ import Modal from "./Projects";
 let data = [
   {
     name: "Reactive Web & App Development",
-    text: "My goal is to become a well established Full stack developer or we can also say a 'MERN' stack developer to be precise. Everything started with HTML, CSS and Javascript as the kick start to my career. I never learnt these languages separately, as I started working on a TNSTC model portal web development I came to understand these languages and did a code and fix model approach to learnt the same. Then completed a 3 months bootstrap course in Coursera, certified from Hong Kong University. Following this, started learning React js in the same university in Coursera with practical experience. But took around some 6 months to complete due to personal health issues & yet managed to complete the certification course. Then completed React native in Udemy again learning for some 4 months and created a Swiggy like FOODPORT app. Side by side came to learn the basics of Git, GitHub, MongoDB, npm, yarn, json etc., And now completed 3 website projects and 1 Mobile application using these knowledge. I'm sure that I'm on my way to conquer Node Js and MongoDB with Express soon. This Train never stops until it reaches it's destination!",
+    text: "My goal is to become a well established Full stack developer or we can also say a 'MERN' stack developer to be precise. Everything started with HTML, CSS and Javascript as the kick start to my career. I never learnt these languages separately, as I started working on a TNSTC model portal web development I came to understand these languages and did a code and fix model approach to learnt the same. Then completed a 3 months bootstrap course in Coursera, certified from Hong Kong University. Following this, started learning React js in the same university in Coursera with practical experience. But took around some 6 months to complete due to personal health issues & yet managed to complete the certification course. Then completed React native in Udemy again learning for some 4 months and created a Swiggy like FOODPORT app. Side by side came to learn the basics of Git, GitHub, MongoDB, npm, yarn, json etc., And now completed 4 website projects and 1 Mobile application using these knowledge. I'm sure that I'm on my way to conquer Node Js and MongoDB with Express soon. This Train never stops until it reaches it's destination!",
   },
   {
     name: "Arts & Video Editing",
@@ -41,78 +41,87 @@ let badge = [
   },
   {
     id: "5",
-    name: "Adobe After Effect",
+    name: "AWS",
   },
-  {
-    id: "6",
-    name: "Front-end Development",
-  },
+  
   {
     id: "7",
-    name: "C++",
+    name: "After Effect",
   },
   {
     id: "8",
-    name: "MongoDB",
+    name: "C",
   },
   {
     id: "9",
-    name: "Wondershare Filmora",
+    name: "Front-end Development",
   },
   {
     id: "10",
-    name: "GitHub",
+    name: "C++",
   },
   {
     id: "11",
-    name: "JSON",
+    name: "MongoDB",
   },
   {
     id: "12",
-    name: "Python",
-  },
-  {
-    id: "12",
-    name: "Java",
+    name: "Wondershare Filmora",
   },
   {
     id: "13",
-    name: "npm",
+    name: "GitHub",
   },
   {
     id: "14",
-    name: "Expo",
+    name: "JSON",
   },
   {
     id: "15",
-    name: "App Development",
+    name: "Python",
   },
   {
     id: "16",
-    name: "Git",
+    name: "Java",
   },
   {
     id: "17",
+    name: "npm",
+  },
+  {
+    id: "18",
+    name: "Expo",
+  },
+  {
+    id: "19",
+    name: "App Development",
+  },
+  {
+    id: "20",
+    name: "Git",
+  },
+  {
+    id: "21",
     name: "DBMS",
   },
   {
-    id: "16",
+    id: "22",
     name: "Data Structures",
   },
   {
-    id: "16",
+    id: "23",
     name: "Redux Thunk",
   },
   {
-    id: "16",
+    id: "24",
     name: "Action-Context",
   },
   {
-    id: "16",
+    id: "25",
     name: "HTML",
   },
   {
-    id: "16",
+    id: "26",
     name: "SCSS",
   },
 ];

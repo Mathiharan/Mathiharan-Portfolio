@@ -22,10 +22,10 @@ class Header extends Component {
       isNavOpen: false,
     };
     this.toggleNav = this.toggleNav.bind(this);
-//    this.handleDownload = this.handleDownload.bind(this); 
+    //    this.handleDownload = this.handleDownload.bind(this);
   }
 
-/*  handleDownload = (url, filename) => {
+  /*  handleDownload = (url, filename) => {
     axios
       .get(url, {
         responseType: "blob",
@@ -99,12 +99,13 @@ class Header extends Component {
                 <hr />
                 <p>
                   Student at VIT Vellore | Software Engineer | Full stack
-                  Developer | Graphics Designer (UI)
+                  Developer | AWS Certified Cloud Practioner | Graphics Designer
+                  (UI)
                 </p>
                 <p>
-                  Former Design Head at Innovators' Quest VIT | Former Core
-                  Committee member at Mozilla Firefox Club VIT | Volleyball
-                  Player, Team VIT
+                  Campus Ambassador of E-Cell IIT Madras | Former Design Head at
+                  Innovators' Quest VIT | Former Core Committee member at
+                  Mozilla Firefox Club VIT | Volleyball Player, Team VIT
                 </p>
                 <hr />
                 {/*<Button

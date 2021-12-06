@@ -86,7 +86,7 @@ const data = [
   },
   {
     id: 7,
-    name: "Top 5th Rank in MIS Dept.",
+    name: "Top 5th Rank in MIS Dept. 2019-20",
     image: "../assets/cert.jpg",
   },
   {
@@ -98,6 +98,26 @@ const data = [
     id: 9,
     name: "Certified React Js Developer",
     image: "../assets/react.jpg",
+  },
+  {
+    id: 10,
+    name: "AWS Certified Cloud Practitioner",
+    image: "../assets/AWS.jpg",
+  },
+  {
+    id: 11,
+    name: "Top 10 Ranker in MIS Dept. 2020-21",
+    image: "../assets/merit21.jpg",
+  },
+  {
+    id: 12,
+    name: "Campus Ambassador of E-Cell IITM",
+    image: "../assets/IITMCA.jpg",
+  },
+  {
+    id: 13,
+    name: "Eyantra Qualified to Level 2 ",
+    image: "../assets/Eyantra.jpg",
   },
 ];
 
